@@ -10,3 +10,7 @@
 
   flex-direction: column;
 }
+
+@mixin margin($m: 0) {
+  margin: $m;
+}

@@ -1,0 +1,54 @@
+.footer {
+  padding: 16px 48px 32px 48px;
+  color: $whiteColor;
+  &__section {
+    @include dFlex;
+
+    &--headline-top {
+      @include heading4($whiteColor);
+      @include margin(0 0 8px 0);
+    }
+    &--headline-bottom {
+      @include heading4($whiteColor);
+      @include margin(35px 0);
+    }
+    &--subline {
+      @include textBody1($whiteColor);
+      @include margin(0 0 16px 0);
+    }
+    &--btn-teach {
+      @include heading4($whiteColor);
+    }
+    &--logos {
+      @include dFlex($gap: 24px);
+    }
+    &--links-and-language {
+      @include dFlex($gap: 168px);
+    }
+    &--links {
+      @include textBody1($whiteColor);
+      li {
+        list-style-type: none;
+      }
+    }
+    &--link-colum {
+      li {
+        padding: 4px 0;
+      }
+    }
+    &--container {
+      margin-left: 500px;
+      @include heading4($whiteColor);
+    }
+    &--logo-udemy {
+      width: 90px;
+      height: 35px;
+    }
+    &--main {
+      padding: 25px 0 32px 0;
+    }
+    &--copyright {
+      @include textBody3($whiteColor);
+    }
+  }
+}

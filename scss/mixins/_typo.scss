@@ -50,6 +50,15 @@
 
 @mixin heading3($color: $blackColor) {
   @include fontUdemySans();
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.9rem;
+  color: $color;
+}
+
+@mixin heading4($color: $blackColor) {
+  @include fontUdemySans();
 
   font-weight: 700;
   line-height: 1.2;
