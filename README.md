@@ -1,3 +1,3 @@
 # Udemy clone
 
-- Đặt tên theo class BEM
+- Đặt tên class theo BEM
