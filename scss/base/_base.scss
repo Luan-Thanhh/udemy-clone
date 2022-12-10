@@ -10,17 +10,17 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 
-  @include responsive($desktop) {
+  @include responsive($large) {
     font-size: 56.25%;
   }
 
-  @include responsive($tablet) {
+  @include responsive($medium) {
     font-size: 50%;
   }
 }
 
 body {
-  @include textBody;
+  background-color: $blackColor;
 }
 
 a {
@@ -33,6 +33,4 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
-  color: inherit;
-  font-family: inherit;
 }
