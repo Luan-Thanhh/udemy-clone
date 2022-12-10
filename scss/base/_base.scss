@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+
+  @include responsive($desktop) {
+    font-size: 56.25%;
+  }
+
+  @include responsive($tablet) {
+    font-size: 50%;
+  }
+}
+
+body {
+  @include textBody;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
