@@ -1,0 +1,23 @@
+@mixin btnPrimary(
+  $bgColor: transparent,
+  $color: $whiteColor,
+  $borderColor: $whiteColor
+) {
+  @include heading3($color);
+
+  min-width: 8rem;
+  padding: 0 1.2rem;
+  height: 4rem;
+  background-color: $bgColor;
+  border: 1px solid $borderColor;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+
+  @if $bgColor == transparent {
+    &:hover {
+      background-color: rgba($whiteColor, 0.08);
+    }
+  }
+} ;
