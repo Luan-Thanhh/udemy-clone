@@ -29,68 +29,61 @@
     sans-serif;
 }
 
+@mixin fontStyle(
+  $fontWeight: 700,
+  $fontSize: 3.2rem,
+  $lineHeight: 1.25,
+  $letterSpacing: -0.05rem,
+  $textColor: $color
+) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  color: $textColor;
+}
+
 @mixin heading1($color: $blackColor) {
   @include fontSuisseWorks();
-
-  font-weight: 700;
-  font-size: 3.2rem;
-  line-height: 1.25;
-  letter-spacing: -0.05rem;
-  color: $color;
+  @include fontStyle($textColor: $color);
 }
 
 @mixin heading2($color: $blackColor) {
   @include fontUdemySans();
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 2.4rem;
-  letter-spacing: -0.02rem;
-  color: $color;
+  @include fontStyle($fontSize: 2.4rem, $textColor: $color);
 }
 
 @mixin heading3($color: $blackColor) {
   @include fontUdemySans();
-
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02rem;
-  font-size: 1.9rem;
-  color: $color;
+  @include fontStyle(
+    $fontSize: 1.9rem,
+    $lineHeight: 1.2,
+    $letterSpacing: -0.02rem,
+    $textColor: $color
+  );
 }
 
 @mixin heading4($color: $blackColor) {
   @include fontUdemySans();
-
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02rem;
-  font-size: 1.6rem;
-  color: $color;
+  @include fontStyle(
+    $fontSize: 1.6rem,
+    $lineHeight: 1.2,
+    $letterSpacing: -0.02rem,
+    $textColor: $color
+  );
 }
 
 @mixin textBody1($color: $blackColor) {
   @include fontUdemySans();
-
-  font-weight: 400;
-  line-height: 1.4;
-  font-size: 1.6rem;
-  color: $color;
+  @include fontStyle(400, 1.6rem, 1.4, 0, $textColor: $color);
 }
 
 @mixin textBody2($color: $blackColor) {
   @include fontUdemySans();
-
-  font-weight: 400;
-  line-height: 1.4;
-  font-size: 1.4rem;
-  color: $color;
+  @include fontStyle(400, 1.4rem, 1.4, 0, $textColor: $color);
 }
 
 @mixin textBody3($color: $blackColor) {
   @include fontUdemySans();
-
-  font-weight: 400;
-  line-height: 1.4;
-  font-size: 1.2rem;
-  color: $color;
+  @include fontStyle(400, 1.2rem, 1.4, 0, $textColor: $color);
 } ;

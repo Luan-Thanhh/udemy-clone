@@ -6,10 +6,10 @@
   $left: auto,
   $zIndex: 1
 ) {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  z-index: 1;
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $zIndex;
 }

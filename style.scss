@@ -1,14 +1,5 @@
 // sass ./style.scss ./style.css --watch
 
-@import './scss/variables/colors';
-@import './scss/variables/size';
-
-@import './scss/mixins/typo';
-@import './scss/mixins/display';
-@import './scss/mixins/responsive';
-@import './scss/mixins/position';
-@import './scss/mixins/button';
-
 @import './scss/base/base';
 
 @import './scss/components/card';

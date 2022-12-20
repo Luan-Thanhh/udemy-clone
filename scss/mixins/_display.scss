@@ -5,7 +5,7 @@
   gap: $gap;
 }
 
-@mixin flexCol($just: space-between, $align: center, $gap: 0) {
+@mixin dFlexCol($just: space-between, $align: center, $gap: 0) {
   @include dFlex($just, $align, $gap);
 
   flex-direction: column;
