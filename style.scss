@@ -1,0 +1,8 @@
+// sass ./style.scss ./style.css --watch
+
+@import './scss/base/base';
+
+@import './scss/components/card';
+
+@import './scss/layouts/header';
+@import './scss/layouts/footer';
